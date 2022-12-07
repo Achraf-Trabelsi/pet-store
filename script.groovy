@@ -6,6 +6,7 @@ def pushToNexus() {
 
 def sonarScan(String serverIp, String serverUser) {
     echo "Running sonarQube scan..."
+    sh 'mvn test'
     sh 'mvn sonar:sonar -D sonar.login=48d7556f97d0484c006e752b08112ebef5b318c5'
 }
 
