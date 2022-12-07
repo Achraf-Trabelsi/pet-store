@@ -18,7 +18,8 @@ pipeline {
         stage("SonarQube Testing and Scan") {
             steps {
                 script {
-                    gv.sonarScan()
+                    // gv.sonarScan()
+                    sh 'echo sonarqube'
                 }
             }
         }
