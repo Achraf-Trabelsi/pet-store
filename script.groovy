@@ -5,7 +5,7 @@ def pushToNexus() {
 }
 
 def sonarScan() {
-    echo "Running sonarQube scan..."
+    echo "Running sonarQube scan and testing ..."
     sh 'mvn test'
     sh 'mvn sonar:sonar -D sonar.login=48d7556f97d0484c006e752b08112ebef5b318c5'
 }
