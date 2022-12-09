@@ -5,7 +5,7 @@ def gv
 pipeline {
     agent any
     tools {
-        maven 'maven'
+        mvn 'maven'
     }
     stages {
         stage("init") {
