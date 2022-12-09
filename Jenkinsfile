@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     gv.sonarScan()
-                    sh 'echo sonarqube'
+                    bat 'echo sonarqube'
                 }
             }
         }
