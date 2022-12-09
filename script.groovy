@@ -7,7 +7,7 @@ def pushToNexus() {
 def sonarScan() {
     echo "Running sonarQube scan and testing ..."
     bat 'mvn test'
-    bat 'mvn sonar:sonar -D sonar.login=48d7556f97d0484c006e752b08112ebef5b318c5'
+    bat 'mvn sonar:sonar -D sonar.login=squ_7b1fa562503bb5bf4d830b500ebfe0faf8b73e57'
 }
 
 return this
